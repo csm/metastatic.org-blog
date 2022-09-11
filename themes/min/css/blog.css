@@ -1,0 +1,42 @@
+body {
+    font-family: "EB Garamond", serif;
+    background-color: white;
+    color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 7em;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+.sitetitle {
+    font-weight: bold;
+    font-size: x-large;
+    color: #808066;
+}
+
+ul.menu {
+    float: right;
+    display: inline-block;
+}
+
+ul.menu li {
+    list-style-type: none;
+    display: inline-grid;
+    margin-left: 1em;
+}
+
+ul.menu li a:link {
+    color: #BCBC96;
+    text-decoration: none;
+}
+
+ul.menu li a:visited {
+    color: #BCBC96;
+    text-decoration: none;
+}
