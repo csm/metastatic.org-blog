@@ -32,17 +32,17 @@ ul.menu li {
 }
 
 a:link {
-    color: #B0B0FF;
+    color: #62628F;
     text-decoration: none;
 }
 
 a:active {
-    color: #FFB0B0;
+    color: #8F6262;
     text-decoration: none;
 }
 
 a:visited {
-    color: #FFB0FF;
+    color: #8f628F;
     text-decoration: none;
 }
 
