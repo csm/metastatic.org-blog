@@ -31,7 +31,27 @@ ul.menu li {
     margin-left: 1em;
 }
 
+a:link {
+    color: #B0B0FF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FFB0B0;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFB0FF;
+    text-decoration: none;
+}
+
 ul.menu li a:link {
+    color: #BCBC96;
+    text-decoration: none;
+}
+
+ul.menu li a:visited {
     color: #BCBC96;
     text-decoration: none;
 }
