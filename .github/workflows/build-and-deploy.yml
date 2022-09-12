@@ -8,17 +8,16 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Build
       run: lein run
-    - name: SSH Agent
-      uses: webfactory/ssh-agent@v0.5.4
-      with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
     - name: Push
-      shell: bash
-      run: lein run -m cryogen.push
+      uses: up9cloud/action-rsync@master
+      env:
+        HOST: metastatic.org
+        KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        TARGET: metastatic.org/
+        SOURCE: public/
+        USER: rsdio
