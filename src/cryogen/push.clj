@@ -18,6 +18,7 @@ h  (:import (java.io PushbackReader)
 
 (defn push [& args]
   (when-let [private-key (System/getenv "SSH_PRIVATE_KEY")]
+    (.mkdir (io/file (str (System/getProperty "user.home") "/.ssh")))
     (spit (str (System/getProperty "user.home") "/.ssh/id_ed25519") private-key))
   (let [config (read (PushbackReader. (io/reader "content/config.edn")))]
     (sh- "rsync"
