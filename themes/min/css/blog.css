@@ -60,3 +60,8 @@ ul.menu li a:visited {
     color: #BCBC96;
     text-decoration: none;
 }
+
+img {
+    max-width: 100%;
+    text-align: center;
+}
