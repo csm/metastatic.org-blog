@@ -16,7 +16,8 @@ jobs:
     - name: Build
       run: lein run
     - name: Push
+      uses: webfactory/ssh-agent@v0.5.4
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       shell: bash
       run: lein run -m cryogen.push
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
