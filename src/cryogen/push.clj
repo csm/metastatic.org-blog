@@ -1,7 +1,7 @@
 (ns cryogen.push
-  (:require [clojure.java.io :as io]))
-h  (:import (java.io PushbackReader)
-            (java.lang ProcessBuilder$Redirect))
+  (:require [clojure.java.io :as io])
+  (:import (java.io PushbackReader)
+           (java.lang ProcessBuilder$Redirect)))
 
 (defn sh-
   [& args]
