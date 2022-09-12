@@ -16,7 +16,7 @@ h  (:import (java.io PushbackReader)
     (when (not (zero? (.exitValue p)))
       (throw (Exception. (str "process exited with status " (.exitValue p)))))))
 
-(defn push [& args]
+(defn -main [& args]
   (when-let [private-key (System/getenv "SSH_PRIVATE_KEY")]
     (.mkdir (io/file (str (System/getProperty "user.home") "/.ssh")))
     (spit (str (System/getProperty "user.home") "/.ssh/id_ed25519") private-key))

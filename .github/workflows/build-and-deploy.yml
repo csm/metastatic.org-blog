@@ -14,9 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: clojure -M:build
+      run: lein run
     - name: Push
       shell: bash
-      run: clojure -X:push
+      run: lein run -m cryogen.push
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
