@@ -1,6 +1,6 @@
 {:site-title                   "Metastatic"
  :author                       "Casey Marshall"
- :description                  "This blog is awesome"
+ :description                  "Just a blog"
  :site-url                     "https://metastatic.org/"
  :post-root                    "posts"
  :page-root                    "pages"
