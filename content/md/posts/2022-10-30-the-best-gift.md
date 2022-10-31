@@ -42,7 +42,8 @@ the answer. Personal websites should be a thing again, and we should be clever
 about connecting disparate sites on a heterogenous network, and less clever about
 optimizing dopamine hits and sending advertisements to eyeballs.
 
-Anyway, I'm `@csm831@mastodon.social`, though I'll still be more of a lurker there
+Anyway, I'm <a rel="me" href="https://mastodon.social/@csm831">`@csm831@mastodon.social`</a>,
+though I'll still be more of a lurker there
 than someone with something interesting to say. If I have something to write I'll
 put it here, on my website, where I don't have like buttons or replies and
 will try to never look at the traffic logs.
